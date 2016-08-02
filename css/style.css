@@ -76,6 +76,13 @@ img {
 }
 
 
+.list-group-item.active, 
+.list-group-item.active:hover, 
+.list-group-item.active:focus {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
 /* ========== FOOTER ========== */
 footer {
 	background-color: #fc8d3c;
