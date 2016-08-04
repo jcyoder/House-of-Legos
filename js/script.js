@@ -42,10 +42,20 @@ loadAJAX();
 */
 $.getJSON('newcategories.json', function(data) {
 	var output = '';
+
+	/*outer each handles the Categories object*/
+	$.each(data, function() {
+		$.each(this, function (index, value) {
+			console.log(value.URL + ":" + value.name);
+		output += '<a href="' + value.URL + '" class="list-group-item category-item">' + value.name + '</a>';
+		});
+	});
 	
-	for (var i=0; i< data.Categories.length; i++) {
+	/* way to do it with a for loop*/
+	/*for (var i=0; i< data.Categories.length; i++) {
 		output += '<a href="' + data.Categories[i].URL + '" class="list-group-item category-item">' + data.Categories[i].name + '</a>';
 	}
-
+	*/
 	$('#category-items').html(output);
 });
+
