@@ -38,43 +38,53 @@ img {
 
 /* ========== SECTIONS ========== */
 .section-white,
-.section-wrapper1,
-.section-wrapper2,
-.section-wrapper3 {
+.section-wrapper
+ {
 	min-height: 400px;
 	padding: 40px 20px;
 }
 
-.section-white {
+.section-white, 
+.bk-white {
 	background-color: #fff;
 }
-.section-wrapper1 {
-	background-color: #1a1a1a;
+
+.favorites {
+    background-color: #1a1a1a;
 }
 
-.section-wrapper2 {
-	background-color: #afa9ab;
+.favorites h3 {
+
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #1a1a1a;
+	text-align:center;
 }
 
-.section-wrapper2 h2 {
-	color:#fff;
-}
-
-.section-wrapper3 {
-	background-color: #1a1a1a;
-}
 
 .col-box {
 
 	background-color: #fff;
 	padding:15px;
 	margin: 20px 0px;
+	min-height: 375px;
 }
 
 .col-box img {
     margin: 10px auto;
 }
 
+.bk-black {
+	background-color: #1a1a1a;
+}
+
+.bk-lt-gray {
+	background-color: #afa9ab;
+}
+
+.bk-lt-gray h2 {
+	color:#fff;
+}
 
 .list-group-item.active, 
 .list-group-item.active:hover, 
