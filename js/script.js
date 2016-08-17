@@ -40,7 +40,7 @@ loadAJAX();
 	$('#category-items').html(output);
 });
 */
-$.getJSON('newcategories.json', function(data) {
+$.getJSON('categories.json', function(data) {
 	var output = '';
 
 	/*outer each handles the Categories object*/
@@ -64,9 +64,9 @@ $.getJSON('favorites.json', function(data) {
 	var output = '';
 
 	$.each(data, function() {
-		var num = data.Favorites.length;
-		console.log("Length is: " + num);
+		output = '<div class="container">';
 		$.each(this, function (index, value) {
+
 			output += '<section class="section-wrapper">';
 			$.each(this, function (index, value) {
 				console.log(this.length);
@@ -77,14 +77,15 @@ $.getJSON('favorites.json', function(data) {
 					output += '<div class="col-md-4">';
 					output += '<div class="col-box">';
 					output += '<img class="img-responsive" src="' + value.Pic + '" alt="" />';
-					output += '<h3>Category: ' + value.Category + '</h3>';
 					output += '<h3>' + value.Title + '</h3>';
+					output += '<h3>Category: ' + value.Category + '</h3>';
 					output +='</div></div>';
 				});
 			output += '</div>';
 			});
 			output += '</section>';
 		});
+		output += '</div>';
 	});
 	console.log(output);
 	$('.favorites').html(output);

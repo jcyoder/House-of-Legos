@@ -1,10 +1,19 @@
-{ "Categories": [
-	"Star Wars",
-	"Pirates",
-	"Ninjago",
-	"Harry Potter",
-	"Marvel",
-	"Lord of the Rings",
-	"DC"
+{ "Categories" : [
+	{"name" : "Star Wars",
+	"URL" : "starwars.html" },
+	{"name" : "Pirates",
+	"URL" : "pirates.html" },
+	{"name" : "Ninjago",
+	"URL" : "ninjago.html" },
+	{"name" : "Harry Potter",
+	"URL" : "harrypotter.html" },
+	{"name" : "Marvel",
+	"URL" : "marvel.html" },
+	{"name" : "Lord of the Rings",
+	"URL" : "lordrings.html" },
+	{"name" : "DC",
+	"URL" : "dc.html" }
+
 	]
+
 }
